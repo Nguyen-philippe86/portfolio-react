@@ -1,0 +1,16 @@
+.navigation{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-active{
+        color: orangered;
+    }
+    img{
+        width: 50px;
+    }
+    .containerlink > .linkNavBar{
+        padding: 0 10px;
+    }
+}
