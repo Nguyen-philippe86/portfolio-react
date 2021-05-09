@@ -14,17 +14,8 @@ $font-1: "Poppins", sans-serif;
 }
 body {
     margin: 0.4rem auto;
-    max-width: 1920px;
     font-family: $font-1;
 }
 li {
     list-style-type: none;
-}
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-    &:hover{
-        color: orangered;
-    }
 }

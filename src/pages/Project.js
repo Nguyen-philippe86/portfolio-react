@@ -3,7 +3,7 @@ import Navigation from '../components/Navigation'
 
 const Project = () => {
     return (
-        <div>
+        <div className="container-xl">
             <Navigation />
             <h1>Project</h1>
         </div>
