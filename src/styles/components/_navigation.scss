@@ -15,6 +15,9 @@
             list-style: none;
             padding: 0 15px;
             text-transform: uppercase;
+            .nav-active{
+                color: orangered;
+            }
             a{
                 text-decoration: none;
                 display: inline-block;

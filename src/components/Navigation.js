@@ -33,8 +33,8 @@ const Navigation = () => {
                 <li><NavLink exact to="/contact" activeClassName="nav-active">Contact</NavLink></li>
                 <div className="closeMenu" onClick={closeMenu}><i className="fa fa-times"></i></div>
                 <li>
-                <a href="https://www.linkedin.com/in/philippe-nguyen-web-dev/" className="social" target="_blank"><i className="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Nguyen-philippe86" className="social" target="_blank"><i className="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/philippe-nguyen-web-dev/" rel="noopener noreferrer" className="social" target="_blank"><i className="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Nguyen-philippe86" rel="noopener noreferrer" className="social" target="_blank"><i className="fab fa-github-square"></i></a>
             </li>
             </ul>
         </div>
