@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import img from "../assets/img/photo_profil.jpeg";
 import cv from "../assets/img/cv-philippe-nguyen.png";
 import cvPDF from "../assets/img/cv-philippe-nguyen.pdf"
@@ -23,18 +24,20 @@ const Home = () => {
 
 
     return (
-        <div className="container-xxl">
+        <div className="container-fluid">
             <Navigation />
             <div className="containerAccueil">
                 <h1 style={{ transform: `translateX(${offsetY*-0.5}px)`}} id="parallax">Développeur Web</h1>
-                <h2 style={{ transform: `translateX(${offsetY*1.3}px)`}} id="parallax2">& Web Mobile</h2>
+                <h2 style={{ transform: `translateX(${offsetY*1.8}px)`}} id="parallax2">& Web Mobile</h2>
             </div>
 
             <div className="containerAbout">
                 <div id="boxAbout">
-                    <div className="titleAbout" data-aos="fade-right"><img src={img} alt="Photo de profil de Philippe Nguyen"/>
+                    <div className="titleAbout" 
+                        data-aos="fade-right"><img src={img} alt="Photo de profil de Philippe Nguyen"/>
                     </div>
-                    <div className="contentAbout" data-aos="fade-left">
+                    <div className="contentAbout" 
+                        data-aos="fade-left">
                         <h3>À propos de moi</h3>
                         <p>
                             Hello ! Je m’appelle Philippe Nguyen, développeur web.
@@ -59,6 +62,7 @@ const Home = () => {
                     <img className="imgCV" src={cv} alt="CV de Philippe Nguyen"/>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

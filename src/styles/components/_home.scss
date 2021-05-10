@@ -1,6 +1,9 @@
 .containerAccueil{
+    width: 100%;
+    margin: 0;
     height: 100vh;
     bottom: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     animation: transitionAccueil 2s;
@@ -8,8 +11,8 @@
         position: relative;
         top: 55%;
         font-weight: 700;
-        font-size: 9vw;
-        letter-spacing: -20px;
+        font-size: 12vw;
+        letter-spacing: -25px;
         text-transform: uppercase;
         color: deepskyblue;
         background: -webkit-linear-gradient(135deg, #1e90ff, #810081);
@@ -18,12 +21,12 @@
     }
     h2{
         position: relative;
-        top: 47%;
+        top: 46%;
         font-size: 9vw;
         font-weight: 100;
         letter-spacing: -10px;
         text-transform: uppercase;
-        filter: drop-shadow(20px 20px 50px #00000080);
+        // filter: drop-shadow(20px 20px 50px #00000080);
         color: orangered;
     }
     @keyframes transitionAccueil {
@@ -38,7 +41,8 @@
     }
 }
 .containerAbout{
-    margin: 5vh 0;
+    width: 70%;
+    margin: 7vh auto;
     #boxAbout{
         display: flex;
         align-items: center;
@@ -89,9 +93,10 @@
     }
 }
 .containerCV{
+    width: 70%;
+    margin: 10vh auto;
     display: flex;
     flex-direction: column;
-    margin: 10vh;
     a{
         width: 30%;
         margin: auto;

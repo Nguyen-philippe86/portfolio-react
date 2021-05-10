@@ -1,8 +1,8 @@
 ## Getting Started
 
-Dépendances node_module `npm install`
+`npm install` Dépendances node_module
 
-Application en mode dev `npm start`
+`npm start` Application en mode dev
 
-Visitez `https://philippe-nguyen.com`
+`https://philippe-nguyen.com` <<< Visitez
 
