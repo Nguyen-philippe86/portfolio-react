@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const Contact = () => {
     return (
-        <div className="container-xl">
+        <div>
             <Navigation />
                 <h1>Contact</h1>
             <Footer />

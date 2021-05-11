@@ -24,7 +24,7 @@ const Home = () => {
 
 
     return (
-        <div className="container-fluid">
+        <div>
             <Navigation />
             <div className="containerAccueil">
                 <h1 style={{ transform: `translateX(${offsetY*-0.5}px)`}} id="parallax">Développeur Web</h1>

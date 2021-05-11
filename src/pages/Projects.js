@@ -7,10 +7,10 @@ import Project from '../components/Project'
 const Projects = () => {
 
     return (
-        <div className="container-fluid">
+        <div>
             <Navigation />
-            <div className="containerProjects">
-                <h1 className="titleProject" 
+            <div className="containerAllSite">
+                <h1 className="titleAllSite" 
                     data-aos="fade-down">Projets réalisées</h1>
                 <div className="contentProjects"
                     data-aos="fade-up">
