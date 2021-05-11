@@ -3,7 +3,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import img from "../assets/img/photo_profil.jpeg";
+import photo from "../assets/img/photo_profil.jpeg";
 import cv from "../assets/img/cv-philippe-nguyen.png";
 import cvPDF from "../assets/img/cv-philippe-nguyen.pdf"
 
@@ -34,7 +34,7 @@ const Home = () => {
             <div className="containerAbout">
                 <div id="boxAbout">
                     <div className="titleAbout" 
-                        data-aos="fade-right"><img src={img} alt="Photo de profil de Philippe Nguyen"/>
+                        data-aos="fade-right"><img src={photo} alt="Photo de profil de Philippe Nguyen"/>
                     </div>
                     <div className="contentAbout" 
                         data-aos="fade-left">
