@@ -5,17 +5,21 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Navigation />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/projets" component={Projects} />
-        <Route path="/competences" component={Skills} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/projets" exact component={Projects} />
+        <Route path="/competences" exact component={Skills} />
+        <Route path="/contact" exact component={Contact} />
         <Route component={NotFound} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 };

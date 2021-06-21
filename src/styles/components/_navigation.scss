@@ -27,10 +27,11 @@
                 font-size: 17px;
                 letter-spacing: -1px;
                 &:hover{
-                    transform: scale(1.2);
-                    transition: all 0.35s ease-in-out;
+                    // transform: scale(1.2);
+                    transition: all 0.75s ease-in-out;
                     z-index: 1;
-                    color: orangered;
+                    background-color: #000;
+                    color: #F6F930;
                 }
             }
             .social{

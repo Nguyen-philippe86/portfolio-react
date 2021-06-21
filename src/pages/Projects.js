@@ -1,6 +1,4 @@
 import React from 'react';
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer';
 import Project from '../components/Project'
 
 
@@ -8,7 +6,6 @@ const Projects = () => {
 
     return (
         <div>
-            <Navigation />
             <div className="containerAllSite">
                 <h1 className="titleAllSite" 
                     data-aos="fade-down">Projets réalisées</h1>
@@ -18,9 +15,10 @@ const Projects = () => {
                     <Project projectNumber={1}/>
                     <Project projectNumber={2}/>
                     <Project projectNumber={3}/>
+                    <Project projectNumber={4}/>
+                    <Project projectNumber={5}/>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

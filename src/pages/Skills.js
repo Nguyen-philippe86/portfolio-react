@@ -1,13 +1,10 @@
 import React from 'react';
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer';
 import Skill from '../components/Skill';
 import { Typewriter } from 'react-typewriting-effect'
 
 const Skills = () => {
     return (
         <div>
-            <Navigation />
             <div className="containerAllSite">
                 <h1 className="titleAllSite" 
                     data-aos="fade-down">Compétences</h1>
@@ -37,7 +34,6 @@ const Skills = () => {
                     <Skill projectNumber={5}/>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

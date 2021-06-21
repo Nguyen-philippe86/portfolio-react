@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer';
 import VanillaTilt from 'vanilla-tilt';
 
 
@@ -90,7 +88,7 @@ const Contact = () => {
         )
     };
 
-    function Tilt(props) {
+    const Tilt = (props) => {
         const { options, ...rest } = props;
         const tilt = useRef(null);
     
@@ -108,7 +106,6 @@ const Contact = () => {
 
     return (
         <div>
-            <Navigation />
                 <div className="containerContact">
                     <h1 className="titleAllSite" data-aos="fade-down">Contact</h1>
                     <div className="contentContact">
@@ -155,8 +152,7 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
-                </div>    
-            <Footer />
+                </div>   
         </div>
     );
 };

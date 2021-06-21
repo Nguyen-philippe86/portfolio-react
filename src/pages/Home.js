@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
 import photo from "../assets/img/photo_profil.jpeg";
 import cv from "../assets/img/cv-philippe-nguyen.png";
 import cvPDF from "../assets/img/cv-philippe-nguyen.pdf"
@@ -10,31 +8,33 @@ import cvPDF from "../assets/img/cv-philippe-nguyen.pdf"
 
 const Home = () => {
 
-        const [offsetY, setOffsetY] = useState(0);
-        const handleScroll = () => setOffsetY(window.pageYOffset);
-        useEffect(() => {
-            window.addEventListener("scroll", handleScroll);
-            
-            return () => window.removeEventListener("scroll", handleScroll);
-        }, [])
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [])
 
-        useEffect(() => {
-            Aos.init({duration: 2000})
-        }, [])
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    }, [])
 
 
     return (
         <div>
-            <Navigation />
             <div className="containerAccueil">
-                <h1 style={{ transform: `translateX(${offsetY*-0.5}px)`}} id="parallax">Développeur Web</h1>
-                <h2 style={{ transform: `translateX(${offsetY*1.8}px)`}} id="parallax2">& Web Mobile</h2>
+                <div className="contentH1">
+                    <h1 style={{ transform: `translateX(${offsetY*-0.5}px)`}} id="parallax">Philippe Nguyen</h1>
+                </div>
+                <div className="contentH2">
+                    <h2 style={{ transform: `translateX(${offsetY*1.8}px)`}} id="parallax2">Développeur Web</h2>
+                </div>
             </div>
 
             <div className="containerAbout">
                 <div id="boxAbout">
-                    <div className="titleAbout" 
-                        data-aos="fade-right"><img src={photo} alt="Photo de profil de Philippe Nguyen"/>
+                    <div className="titleAbout" data-aos="fade-right"><img src={photo} alt="Photo de profil de Philippe Nguyen"/>
                     </div>
                     <div className="contentAbout" 
                         data-aos="fade-left">
@@ -59,10 +59,9 @@ const Home = () => {
                         data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
-                    <img className="imgCV" src={cv} alt="CV de Philippe Nguyen"/>
+                    <img className="imgCV" src={cv} alt="CV"/>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

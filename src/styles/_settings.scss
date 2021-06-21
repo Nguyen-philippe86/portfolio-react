@@ -8,7 +8,6 @@ $font-1: "Poppins", sans-serif;
     padding: 0;
 }
 body {
-    margin: 0.4rem auto;
     font-family: $font-1;
 }
 li {
@@ -24,5 +23,13 @@ li {
         font-size: 7vw;
         text-transform: uppercase;
         color: orangered;
+    }
+}
+@media screen and (min-width:350px) and (max-width: 767px){
+    .containerAllSite{
+        overflow: hidden;
+        .titleAllSite{
+            font-size: 10vw;
+        }
     }
 }

@@ -27,18 +27,18 @@ const Navigation = () => {
             <NavLink exact to="/" className="logo"><img src="./img/logo.png" alt="logo Philippe Nguyen"/></NavLink>
             <div className="openMenu" onClick={openMenu}><i className="fa fa-bars"></i></div>
             <ul className="mainMenu">
-                <li><NavLink exact to="/" activeClassName="nav-active">Accueil</NavLink></li>
-                <li><NavLink exact to="/projets" activeClassName="nav-active">Projets</NavLink></li>
-                <li><NavLink exact to="/competences" activeClassName="nav-active">Compétences</NavLink></li>
-                <li><NavLink exact to="/contact" activeClassName="nav-active">Contact</NavLink></li>
+                <li><NavLink exact={true} to="/" activeClassName="nav-active">Accueil</NavLink></li>
+                <li><NavLink exact={true} to="/projets" activeClassName="nav-active">Projets</NavLink></li>
+                <li><NavLink exact={true} to="/competences" activeClassName="nav-active">Compétences</NavLink></li>
+                <li><NavLink exact={true} to="/contact" activeClassName="nav-active">Contact</NavLink></li>
                 <div className="closeMenu" onClick={closeMenu}><i className="fa fa-times"></i></div>
                 <li>
-                <a href="https://www.linkedin.com/in/philippe-nguyen-web-dev/" rel="noopener noreferrer" className="social" target="_blank"><i className="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Nguyen-philippe86" rel="noopener noreferrer" className="social" target="_blank"><i className="fab fa-github-square"></i></a>
-            </li>
+                    <a href="https://www.linkedin.com/in/philippe-nguyen-web-dev/" rel="noopener noreferrer" className="social" target="_blank"><i className="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Nguyen-philippe86" rel="noopener noreferrer" className="social" target="_blank"><i className="fab fa-github-square"></i></a>
+                </li>   
             </ul>
         </div>
-    );
-};
+    )
+}
 
 export default Navigation;
