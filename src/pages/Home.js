@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import photo from "../assets/img/profil.png";
-import cv from "../assets/img/cv-philippe-nguyen.png";
 import cvPDF from "../assets/img/cv-philippe-nguyen.pdf"
 
 
@@ -65,12 +64,12 @@ const Home = () => {
                                 <h4>Formation</h4>
                             </div>
                             <div className="contentCase">
-                                <h4>2021 > Titre RNCP bac+2</h4>
+                                <h4>2021 <span>&gt;</span> Titre RNCP bac+2</h4>
                                 <ul>
                                     <li>Développeur web & web mobile</li>
                                     <li>Talis Business School - Bordeaux</li>
                                 </ul>
-                                <h4>2020 > Autodidacte</h4>
+                                <h4>2020 <span>&gt;</span> Autodidacte</h4>
                                 <ul>
                                     <li>OpenClassrooms, Pierre-Giraud, Udemy</li>
                                 </ul>
@@ -87,19 +86,19 @@ const Home = () => {
                                 <h4><strong>Langages informatiques</strong></h4>
                                 <ul>
                                     <li>
-                                        PHP | Javascript | HTML | CSS/SCSS
+                                        <span>PHP | Javascript | HTML | CSS/SCSS</span>
                                     </li>
                                 </ul>
                                 <h4>Frameworks | CMS</h4>
                                 <ul>
                                     <li>
-                                        Symfony | ReactJS | Bootstrap | Wordpress
+                                        <span>Symfony | ReactJS | Bootstrap | Wordpress</span>
                                     </li>
                                 </ul>
                                 <h4>Environnement</h4>
                                 <ul>
                                     <li>
-                                        VS Code | Git & GitHub
+                                        <span>VS Code | Git & GitHub</span>
                                     </li>
                                 </ul>
                             </div>
@@ -112,13 +111,15 @@ const Home = () => {
                                 <h4>Compétences</h4>
                             </div>
                             <div className="contentCase">
-                                <p className="skills">
-                                    <li>Réaliser une interface web statique et dynamique</li>
-                                    <li>Créer une base de données</li>
-                                    <li>Développer les composants d’accès aux données</li>
-                                    <li>Réaliser la partie back-end d’un site web</li>
-                                    <li>Esprit d’équipe | Organisé | Passioné</li>
-                                </p>
+                                <div className="skills">
+                                    <ul>
+                                        <li>Réaliser une interface web statique et dynamique</li>
+                                        <li>Créer une base de données</li>
+                                        <li>Développer les composants d’accès aux données</li>
+                                        <li>Réaliser la partie back-end d’un site web</li>
+                                        <li>Esprit d’équipe | Organisé | Passioné</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

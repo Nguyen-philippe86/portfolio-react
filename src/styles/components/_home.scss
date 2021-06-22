@@ -36,7 +36,7 @@
             color: #fff;
             position: relative;
             margin-bottom: 0;
-            left: 9px;
+            left: 10px;
             // transition-delay: 4s;
             animation: transitionTitreH2 2s;
         }
@@ -63,20 +63,15 @@
     }
 }
 @media screen and (min-width:350px) and (max-width: 767px){
-    .containerAccueil{
-        display: flex;
-        h1{
-            top: 45%;
-            font-size: 13vw;
-            font-weight: bold;
-            letter-spacing: -5px;
-        }
-        h2{
-            top: 41%;
-            font-size: 13vw;
-            font-weight: 300;
-            letter-spacing: -5px;
-        }
+    .containerAccueil > .contentH1 > h1{
+        top: 45%;
+        font-size: 25vw;
+        font-weight: bold;
+        letter-spacing: -5px;
+    }
+    .containerAccueil > .contentH2 > h2{
+        position: relative;
+        left: 5px;
     }
 }
 .containerAbout{
@@ -90,15 +85,15 @@
             left: 2vw;
             z-index: 1;
             box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-            border: 5px solid rgb(238, 255, 0);
+            border: 5px solid #BCED09;
             background-color: transparent;
-            border-radius: 5px;
+            // border-radius: 5px;
             img{
                 width: 300px;
                 position: relative;
-                top: 20px;
-                border-radius: 5px;
-                left: 20px;
+                top: 15px;
+                // border-radius: 5px;
+                left: 15px;
             }
         }
         .contentAbout{
@@ -111,7 +106,7 @@
             z-index: 0;
             position: relative;
             right: 2vw;
-            border-radius: 10px;
+            // border-radius: 10px;
             h3{
                 font-size: 3vw;
                 font-weight: 400;
@@ -131,19 +126,24 @@
 @media screen and (min-width:350px) and (max-width: 767px){
     .containerAbout{
         width: 100%;
-        margin: 2vh auto;
+        margin: 0;
         overflow: hidden;
         #boxAbout{
             display: flex;
             flex-direction: column;
-            .titleAbout{
+            .profilePicture{
                 left: 0;
+                box-shadow: none;
+                img{
+                    width: 150px;
+                }
             }
             .contentAbout{
                 padding: 5vw;
                 right: 0;
                 border: none;
                 margin: 2vh;
+                box-shadow: none;
                 h3{
                     font-size: 10vw;
                     margin: 5vh 0;
@@ -165,8 +165,8 @@
         margin: auto;
         text-align: center;
         margin-top: 5vh;
-        margin-bottom: 17vh;
-        display: inline-block;
+        margin-bottom: 10vh;
+        // display: inline-block;
         padding: 10px 20px;
         background: #BCED09;
         text-decoration: none;
@@ -177,33 +177,32 @@
         border-top: 1px solid rgba(255,255,255, 0.5);
         border-left: 1px solid rgba(255, 255, 255, 0.5);
         &:hover{
-            background: #FCFFFC;
-            color: orangered;
-            border: 1px solid orangered;
+            background: #000;
+            color: #BCED09;
+            border: 1px solid #BCED09;
             transition: 0.4s ease-in-out;
         }
     }
     .boxCV{
         width: 100%;
         .cases{
+            // height: 500px;
             display: flex;
             justify-content: center;
-            height: 550px;
-            background: #000;
+            align-items: center;
             .case{
                 width: 30%;
+                height: 400px;
                 display: flex;
-                align-items: center;
                 flex-direction: column;
-                position: relative;
-                top: 50%;
-                transform: translateY(-25%);
+                align-items: center;
+                justify-content: center;
                 text-align: center;
                 .titleCase{
                     width: 90%;
                     height: 50px;
-                    background: #BCED09;
-                    color: #000;
+                    background: #000;
+                    color: #BCED09;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -216,19 +215,22 @@
                     width: 90%;
                     height: 250px;
                     padding-top: 25px;
-                    background-color: #fff;
-                    color: #000;
+                    background-color: #000;
+                    color: #fff;
                     font-size: 17px;
+                    span{
+                        color: #BCED09;
+                    }
                     ul{
                         padding: 0;
                     }
-                    .skills {
+                    .skills > ul {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         padding-left: 30px;
-                        li{
-                            list-style-type: disc;
+                     li{
+                        list-style-type: disc;
                         }
                     }
                 }
@@ -239,16 +241,47 @@
 @media screen and (min-width:350px) and (max-width: 767px){
     .containerCV{
         width: 90%;
-        margin: 5vh auto;
+        margin: auto;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
         a{
             width: 50%;
-            margin: 2vh auto;
+            margin-bottom: 2vh auto;
             font-size: 10px;
         }
         .boxCV{
             width: 100%;
-            .imgCV{
-                width: 100%;
+            .cases{
+                display: flex;
+                flex-wrap: wrap-reverse;
+                .case{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 40px;
+                    .titleCase{
+                        margin-bottom: 5px;
+                        width: 100%
+                    }
+                    .contentCase{
+                        width: 100%;
+                        font-size: 13px;
+                        .skills > ul {
+                            display: flex;
+                            align-items: center;
+                            padding-left: 0;
+                            li{
+                                list-style-type: none;
+                                margin-bottom: 10px;
+                                // &::after{
+                                //     content: "";
+                                //     width: 100px;
+                                //     height: 2px;
+                                //     background-color: #BCED09;
+                                // }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
