@@ -14,15 +14,23 @@ li {
     list-style-type: none;
     text-align: center;
 }
-.containerAllSite{
+.containerTitleAllSite{
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .titleAllSite{
-        margin: 10vh 0;
-        font-size: 7vw;
-        text-transform: uppercase;
-        color: orangered;
+    justify-content: center;
+    .contentTitleAllSite{
+        height: 200px;
+        display: flex;
+        align-items: center;        
+        background-color: #000;
+        .titleAllSite{
+            font-size: 7vw;
+            text-transform: uppercase;
+            color: #BCED09;
+    
+        }
     }
 }
 @media screen and (min-width:350px) and (max-width: 767px){

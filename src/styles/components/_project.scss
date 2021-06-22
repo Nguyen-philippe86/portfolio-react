@@ -64,18 +64,19 @@
             .btn{
                 text-decoration: none;
                 padding: 0.5rem 1rem;
-                background-color: orangered;
-                color: #fff;
+                background-color: #BCED09;
+                color: #000;
                 font-size: 14px;
                 font-weight: bold;
                 cursor: pointer;
                 transition: 0.4s ease-in-out;
-                box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-                border-top: 1px solid rgba(255,255,255, 0.5);
-                border-left: 1px solid rgba(255, 255, 255, 0.5);
+                // box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                // border-top: 1px solid rgba(255,255,255, 0.5);
+                // border-left: 1px solid rgba(255, 255, 255, 0.5);
             }
             .languages{
                 display: flex;
+                background-color: #000;
                 li{
                     text-transform: uppercase;
                     padding: 1rem;
@@ -83,8 +84,9 @@
             }
             .titleProject{
                 width: 90%;
-                background-color: #000;
-                margin-bottom: 5px;
+                background-color: #BCED09;
+                color: #000;
+                margin-bottom: 10px;
                 padding: 5px 10px;
                 display: flex;
                 align-items: center;
@@ -97,6 +99,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-bottom: 10px;
             }
         }
     }
