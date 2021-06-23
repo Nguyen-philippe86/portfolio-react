@@ -12,17 +12,18 @@ const Skills = () => {
                             data-aos="fade-down">Mes compétences</h1>
                     </div>
                 </div> 
-                <p className="containerP"
-                    data-aos="fade-in">
-                    La formation de développeur web et web mobile m'a permis d'obtenir de nombreux acquis dans le domaine,
-                    qui comprend l'intégration d'une maquette avec Adobe XD, réaliser une interface web statique et
-                    dynamique avec HTML, CSS, JavaScript | jQuery. Créer une base de données, puis développer les composants
-                    d'accès aux données avec MySQL. Réaliser la partie back-end en intégrant les opérations de base (CRUD)
-                    pour la persistance des données, en particulier le stockage d'informations en base de données, proposer
-                    une interface administrateur. Mais aussi savoir développer un système d'authentification ainsi que sa
-                    sécurité avec PHP | Symfony. Puis enfin développer un site web à l'aide d'un système de gestion de
-                    contenu (WordPress).
-                </p>
+                <div className="containerP" data-aos="fade-in">
+                    <p>
+                        La formation de développeur web et web mobile m'a permis d'obtenir de nombreux acquis dans le domaine.
+                        La partie front-end qui comprend l'intégration d'une maquette, réaliser une interface web responsive, statique et dynamique avec HTML, CSS/SCSS, JavaScript, jQuery. 
+                    </p>
+                    <p>
+                        La partie back-end avec PHP/MySQL et Symfony, comprend la création d'une base de données, développer les composants d'accès aux données, intégrer les opérations de base (CRUD), ainsi qu'un système d'inscription et d'authentification sécurisé.
+                    </p>
+                    <p>    
+                        Mais aussi savoir développer et intégrer un système de paiement en ligne pour les sites e-commerce avec Stripe, des confirmations d'inscription par e-mail avec MailJet, ou encore proposer une interface administrateur. Puis enfin développer un site web à l'aide d'un système de gestion de contenu (WordPress).
+                    </p>
+                </div>
                 <Typewriter className="typewriter"
                     string='Mon profil vous a convaincue ? Contactez moi !'
                     delay={75}

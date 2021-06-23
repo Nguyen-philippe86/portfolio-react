@@ -1,14 +1,14 @@
 .containerP{
     font-size: 17px;
     text-align: center;
-    padding: 90px;
+    padding: 60px 400px;
     background: #000;
     width: 100%;
     color: #fff;
 }
 @media screen and (min-width:350px) and (max-width: 767px){
     .containerP{
-        font-size: 12px;
+        font-size: 15px;
         padding: 5vh 3vw;
     }
 }
@@ -57,9 +57,6 @@
             text-align: center;
             color: #BCED09;
         }
-        // p{
-        //     font-size: 17px;
-        // }
         ul{
             padding: 0;
             margin-top: 1rem;

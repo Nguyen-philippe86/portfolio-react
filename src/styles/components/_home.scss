@@ -63,15 +63,23 @@
     }
 }
 @media screen and (min-width:350px) and (max-width: 767px){
-    .containerAccueil > .contentH1 > h1{
-        top: 45%;
-        font-size: 25vw;
-        font-weight: bold;
-        letter-spacing: -5px;
-    }
-    .containerAccueil > .contentH2 > h2{
-        position: relative;
-        left: 5px;
+    .containerAccueil {
+        height: 75vh;
+        .contentH1{
+            top: 35%;
+            h1{
+                font-size: 25vw;
+                font-weight: bold;
+                letter-spacing: -5px;
+            }
+        }
+        .contentH2{
+            top: 35%;
+            h2{
+                position: relative;
+                left: 5px;
+            }
+        }
     }
 }
 .containerAbout{

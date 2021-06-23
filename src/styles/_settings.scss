@@ -31,8 +31,7 @@ li {
             height: 200px;
             display: flex;
             align-items: center;  
-            justify-content: center;      
-            // background-color: #000;
+            justify-content: center;
             .titleAllSite{
                 font-size: 7vw;
                 text-transform: uppercase;
@@ -46,8 +45,11 @@ li {
 @media screen and (min-width:350px) and (max-width: 767px){
     .containerAllSite{
         overflow: hidden;
-        .titleAllSite{
-            font-size: 10vw;
+        .containerTitleAllSite{
+            height: 150px;
+            .contentTitleAllSite > .titleAllSite{
+                font-size: 37px;
+            }
         }
     }
 }
