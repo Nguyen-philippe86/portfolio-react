@@ -1,8 +1,8 @@
 .containerP{
-    font-size: 1.5vw;
+    font-size: 17px;
     text-align: center;
     padding: 90px;
-    background: linear-gradient(135deg, dodgerblue, rgb(129, 0, 129));
+    background: #000;
     width: 100%;
     color: #fff;
 }
@@ -30,13 +30,12 @@
     flex-wrap: wrap;
     justify-content: center;
     .services{
-        width: 475px;
-        height: 575px;
+        width: 450px;
+        height: 500px;
         margin: 10px;
         padding: 20px;
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-        border-radius: 15px;
-        background: linear-gradient(135deg, rgb(30, 144, 255), rgb(129, 0, 129));
+        background: #000;
         overflow: hidden;
         border-top: 1px solid rgba(255,255,255, 0.5);
         border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -56,16 +55,17 @@
             font-size: 2vw;
             font-weight: 400;
             text-align: center;
+            color: #BCED09;
         }
         // p{
-        //     font-size: 25px;
+        //     font-size: 17px;
         // }
         ul{
             padding: 0;
             margin-top: 1rem;
             li{
                 font-family: sans-serif;
-                font-size: 1.3vw;
+                font-size: 17px;
                 font-weight: 100;
                 list-style-type: none;
                 text-align: center;

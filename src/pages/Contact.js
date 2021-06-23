@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import VanillaTilt from 'vanilla-tilt';
+// import VanillaTilt from 'vanilla-tilt';
 
 
 const Contact = () => {
@@ -88,72 +88,81 @@ const Contact = () => {
         )
     };
 
-    const Tilt = (props) => {
-        const { options, ...rest } = props;
-        const tilt = useRef(null);
+    // const Tilt = (props) => {
+    //     const { options, ...rest } = props;
+    //     const tilt = useRef(null);
     
-        useEffect(() => {
-        VanillaTilt.init(tilt.current, options);
-        }, [options]);
+    //     useEffect(() => {
+    //     VanillaTilt.init(tilt.current, options);
+    //     }, [options]);
     
-        return <div ref={tilt} {...rest} />;
-    }
+    //     return <div ref={tilt} {...rest} />;
+    // }
 
-    const options = {
-        speed: 1000,
-        max: 30
-    };
+    // const options = {
+    //     speed: 1000,
+    //     max: 30
+    // };
 
     return (
-        <div>
-                <div className="containerContact">
-                    <h1 className="titleAllSite" data-aos="fade-down">Contact</h1>
-                    <div className="contentContact">
-                        <div className="boxInfo" data-aos="fade-right">
-                            <Tilt options={options}>
-                                <h3>Mes coordonnées</h3>
-                                <div className="logoInfo">
-                                    <i className="fas fa-phone-alt">&nbsp;&nbsp;|<a href="tel:+33608081033"> 06 08 08 10 33</a></i>
-                                    <i className="fas fa-paper-plane">&nbsp;&nbsp;|<a href="mailto: contact@philippe-nguyen.com">contact@philippe-nguyen.com</a></i>
-                                </div>
-                                <div className="logoSocial">
-                                    <a href="https://www.linkedin.com/in/philippe-nguyen-web-dev/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/Nguyen-philippe86" target="_blank" rel="noreferrer"><i className="fab fa-github-square"></i></a>
-                                    <a href="https://www.facebook.com/koo.nguyen93" target="_blank" rel="noreferrer"><i className="fab fa-facebook-square"></i></a>
-                                </div>
-                            </Tilt>
+        <div className="containerAllSite">
+            <div className="containerTitleAllSite">
+                <div className="contentTitleAllSite">
+                    <h1 className="titleAllSite" 
+                        data-aos="fade-down">Contact</h1>
+                </div>
+            </div> 
+            <div className="contentContact">
+                    {/* <Tilt options={options}> */}
+                <div className="boxInfo" data-aos="fade-right">
+                        <div className="contentTitleBoxInfo">
+                            <h3>Mes coordonnées</h3>
                         </div>
-                        <div className="boxForm" data-aos="fade-left">
-                            <form>
-                                <h3>Formulaire de contact</h3>
-                                <div className="input-group mb-3">
-                                    <span className="input-group-text"><i className="fas fa-user"></i></span>
-                                    <input type="text" id="name" name="name" placeholder="Nom & Prénom*" aria-label="prenom" className="form-control" onChange={(e) => setName(e.target.value)} value={name}/>
-                                </div>
-                                <div className="input-group mb-3">
-                                    <span className="input-group-text" id="addon-wrapping"><i className="fas fa-phone-alt"></i></span>
-                                    <input type="number" className="form-control" placeholder="Téléphone" name="phone"
-                                        aria-label="telephone" aria-describedby="addon-wrapping" onChange={(e) => setPhone(e.target.value)} value={phone}/>
-                                </div>
-                                <div className="input-group mb-3">
-                                    <span className="input-group-text" id="addon-wrapping"><i className="fas fa-at"></i></span>
-                                    <label id="not-email">Email non valide</label>
-                                    <input type="email" id="email" className="form-control" placeholder="Email*" name="email" aria-label="email"
-                                        aria-describedby="addon-wrapping" onChange={(e) => setEmail(e.target.value)} value={email}/>
-                                </div>
-                                <div className="input-group mb-3 areaZone">
-                                    <span className="input-group-text"><i className="fas fa-comment-dots"></i></span>
-                                    <textarea className="form-control" id="message" name="message" placeholder="Message*" aria-label="With textarea" onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
-                                </div>
-                                <div className="btnForm">
-                                    <input className="button" type="button" value="Envoyer" onClick={handleSubmit}/>
-                                </div>
-                                <div className="form-message"></div>
-                            </form>
+                        <div className="contentInfo">
+                            <div className="info">
+                                <i className="fas fa-phone-alt">&nbsp;&nbsp;|<a href="tel:+33608081033"> 06 08 08 10 33</a></i>
+                                <i className="fas fa-paper-plane">&nbsp;&nbsp;|<a href="mailto: contact@philippe-nguyen.com">contact@philippe-nguyen.com</a></i>
+                            </div>
                         </div>
-                    </div>
-                </div>   
-        </div>
+                        <div className="logoSocial">
+                            <a href="https://www.linkedin.com/in/philippe-nguyen-web-dev/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Nguyen-philippe86" target="_blank" rel="noreferrer"><i className="fab fa-github-square"></i></a>
+                            <a href="https://www.facebook.com/koo.nguyen93" target="_blank" rel="noreferrer"><i className="fab fa-facebook-square"></i></a>
+                        </div>
+                </div>
+                    {/* </Tilt> */}
+                <div className="boxForm" data-aos="fade-left">
+                    <form>
+                        {/* <div className="contentTitleContact">
+                            <h3>Contactez moi</h3>
+                        </div> */}
+                        <div className="input-group mb-3">
+                            <span className="input-group-text"><i className="fas fa-user"></i></span>
+                            <input type="text" id="name" name="name" placeholder="Nom & Prénom*" aria-label="prenom" className="form-control" onChange={(e) => setName(e.target.value)} value={name}/>
+                        </div>
+                        <div className="input-group mb-3">
+                            <span className="input-group-text" id="addon-wrapping"><i className="fas fa-phone-alt"></i></span>
+                            <input type="number" className="form-control" placeholder="Téléphone" name="phone"
+                                aria-label="telephone" aria-describedby="addon-wrapping" onChange={(e) => setPhone(e.target.value)} value={phone}/>
+                        </div>
+                        <div className="input-group mb-3">
+                            <span className="input-group-text" id="addon-wrapping"><i className="fas fa-at"></i></span>
+                            <label id="not-email">Email non valide</label>
+                            <input type="email" id="email" className="form-control" placeholder="Email*" name="email" aria-label="email"
+                                aria-describedby="addon-wrapping" onChange={(e) => setEmail(e.target.value)} value={email}/>
+                        </div>
+                        <div className="input-group mb-3 areaZone">
+                            <span className="input-group-text"><i className="fas fa-comment-dots"></i></span>
+                            <textarea className="form-control" id="message" name="message" placeholder="Message*" aria-label="With textarea" onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
+                        </div>
+                        <div className="btnForm">
+                            <input className="button" type="button" value="Envoyer" onClick={handleSubmit}/>
+                        </div>
+                        <div className="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>   
     );
 };
 

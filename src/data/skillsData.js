@@ -2,7 +2,7 @@ export const skillsData = [
     {
         id: 1,
         title: "Front End",
-        languages: ["HTML", "CSS", "Sass", "JavaScript", "jQuery"],
+        languages: ["HTML", "CSS / SCSS", "JavaScript", "jQuery"],
         img: "./img/frontend.png",
     },
     {
@@ -31,7 +31,7 @@ export const skillsData = [
     },
     {
         id: 6,
-        title: "Outils de développement",
+        title: "Environnement",
         languages: ["Windows / Mac OS", "Git / GitHub", "VS Code", "Adobe XD"],
         img: "./img/settings.png",
     },

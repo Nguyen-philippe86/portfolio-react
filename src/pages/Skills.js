@@ -6,8 +6,12 @@ const Skills = () => {
     return (
         <div>
             <div className="containerAllSite">
-                <h1 className="titleAllSite" 
-                    data-aos="fade-down">Compétences</h1>
+                <div className="containerTitleAllSite">
+                    <div className="contentTitleAllSite">
+                        <h1 className="titleAllSite" 
+                            data-aos="fade-down">Mes compétences</h1>
+                    </div>
+                </div> 
                 <p className="containerP"
                     data-aos="fade-in">
                     La formation de développeur web et web mobile m'a permis d'obtenir de nombreux acquis dans le domaine,

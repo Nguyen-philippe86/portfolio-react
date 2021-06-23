@@ -24,16 +24,16 @@ const Home = () => {
         <div>
             <div className="containerAccueil">
                 <div className="contentH1">
-                    <h1 style={{ transform: `translateX(${offsetY*-0.5}px)`}} id="parallax">Philippe Nguyen</h1>
+                    <h1 style={{ transform: `translateX(${offsetY*-2}px)`}} id="parallax">Philippe Nguyen</h1>
                 </div>
                 <div className="contentH2">
-                    <h2 style={{ transform: `translateX(${offsetY*1.8}px)`}} id="parallax2">Developpeur Web</h2>
+                    <h2 style={{ transform: `translateX(${offsetY*2.1}px)`}} id="parallax2">Developpeur Web</h2>
                 </div>
             </div>
 
             <div className="containerAbout">
                 <div id="boxAbout">
-                    <div className="profilePicture" data-aos="fade-right"><img src={photo} alt="Photo de profil de Philippe Nguyen"/>
+                    <div className="profilePicture" data-aos="fade-right"><img src={photo} alt="Philippe Nguyen"/>
                     </div>
                     <div className="contentAbout" 
                         data-aos="fade-left">

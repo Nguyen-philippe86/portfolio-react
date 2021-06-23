@@ -27,10 +27,10 @@ const Navigation = () => {
             <NavLink exact to="/" className="logo"><img src="./img/logo.png" alt="logo Philippe Nguyen"/></NavLink>
             <div className="openMenu" onClick={openMenu}><i className="fa fa-bars"></i></div>
             <ul className="mainMenu">
-                <li><NavLink exact={true} to="/" activeClassName="nav-active">Accueil</NavLink></li>
-                <li><NavLink exact={true} to="/projets" activeClassName="nav-active">Projets</NavLink></li>
-                <li><NavLink exact={true} to="/competences" activeClassName="nav-active">Compétences</NavLink></li>
-                <li><NavLink exact={true} to="/contact" activeClassName="nav-active">Contact</NavLink></li>
+                <li><NavLink exact to="/" activeClassName="nav-active">Accueil</NavLink></li>
+                <li><NavLink to="/projets" activeClassName="nav-active">Projets</NavLink></li>
+                <li><NavLink to="/competences" activeClassName="nav-active">Compétences</NavLink></li>
+                <li><NavLink to="/contact" activeClassName="nav-active">Contact</NavLink></li>
                 <div className="closeMenu" onClick={closeMenu}><i className="fa fa-times"></i></div>
                 <li>
                     <a href="https://www.linkedin.com/in/philippe-nguyen-web-dev/" rel="noopener noreferrer" className="social" target="_blank"><i className="fab fa-linkedin"></i></a>

@@ -87,12 +87,10 @@
             box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
             border: 5px solid #BCED09;
             background-color: transparent;
-            // border-radius: 5px;
             img{
                 width: 300px;
                 position: relative;
                 top: 15px;
-                // border-radius: 5px;
                 left: 15px;
             }
         }
@@ -106,7 +104,6 @@
             z-index: 0;
             position: relative;
             right: 2vw;
-            // border-radius: 10px;
             h3{
                 font-size: 3vw;
                 font-weight: 400;
@@ -166,21 +163,18 @@
         text-align: center;
         margin-top: 5vh;
         margin-bottom: 10vh;
-        // display: inline-block;
         padding: 10px 20px;
         background: #BCED09;
         text-decoration: none;
         color: #000;
         text-transform: uppercase;
-        border-radius: 10px;
         box-shadow: 10px 10px 55px rgba(0, 0, 0, 0.3);
         border-top: 1px solid rgba(255,255,255, 0.5);
         border-left: 1px solid rgba(255, 255, 255, 0.5);
         &:hover{
             background: #000;
             color: #BCED09;
-            border: 1px solid #BCED09;
-            transition: 0.4s ease-in-out;
+            border: 2px solid #BCED09;
         }
     }
     .boxCV{
@@ -247,7 +241,7 @@
         a{
             width: 50%;
             margin-bottom: 2vh auto;
-            font-size: 10px;
+            font-size: 13px;
         }
         .boxCV{
             width: 100%;
@@ -264,7 +258,7 @@
                     }
                     .contentCase{
                         width: 100%;
-                        font-size: 13px;
+                        font-size: 15px;
                         .skills > ul {
                             display: flex;
                             align-items: center;
