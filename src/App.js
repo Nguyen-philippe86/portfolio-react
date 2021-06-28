@@ -13,10 +13,10 @@ const App = () => {
     <BrowserRouter>
       <Navigation />
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/projets" exact component={Projects} />
-        <Route path="/competences" exact component={Skills} />
-        <Route path="/contact" exact component={Contact} />
+        <Route path="/" exact={true} component={Home} />
+        <Route path="/projets" component={Projects} />
+        <Route path="/competences" component={Skills} />
+        <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

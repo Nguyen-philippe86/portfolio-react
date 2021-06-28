@@ -21,6 +21,11 @@ li {
 }
 a{
     text-decoration: none;
+    color: #000;
+    margin: 0 5px;
+    &:hover{
+        color: #BCED09;
+    }
 }
 .containerAllSite{
     display: flex;
@@ -53,6 +58,8 @@ a{
 @media screen and (min-width:350px) and (max-width: 767px){
     .containerAllSite{
         overflow: hidden;
+        position: relative;
+        top: 75px;
         .containerTitleAllSite{
             height: 150px;
             .contentTitleAllSite > .titleAllSite{
